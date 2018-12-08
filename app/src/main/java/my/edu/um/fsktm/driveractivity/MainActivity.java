@@ -1,5 +1,6 @@
 package my.edu.um.fsktm.driveractivity;
 
+import android.content.ClipData;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -16,6 +17,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Button button;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +27,22 @@ public class MainActivity extends AppCompatActivity {
         Toolbar myToolbar = (Toolbar) findViewById(R.id.TB);
         setSupportActionBar(myToolbar);
 
+
+        button = (Button)findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v){
+                openSearchingFOrPassengers();
+            }
+        });
+    }
+    
+
+    public  void openSearchingFOrPassengers(){
+
+        Intent intent = new Intent(this, SearchingForPassengers.class);
+        startActivity(intent);
     }
 
 
@@ -32,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.main, menu);
         return true ;
-
 
 
     }
