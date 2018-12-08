@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".DetailsEdit">
 
     <android.support.v7.widget.Toolbar
@@ -17,7 +18,52 @@
 
         />
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_marginTop="44dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Car Model"
+        android:textColor="@color/fdbacktxtcol"
+        android:textSize="24sp" />
+
+    <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="E.g Toyota Premio" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Car Number Plate"
+        android:textColor="@color/fdbacktxtcol"
+        android:textSize="24sp" />
+
+    <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="E.g WMX2772" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Car Color"
+        android:textColor="@color/fdbacktxtcol"
+        android:textSize="24sp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E.g Blue" />
+    </android.support.design.widget.TextInputLayout>
 
 
-
-</RelativeLayout>
+</LinearLayout>
