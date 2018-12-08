@@ -16,15 +16,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".feedback" />
+        <activity android:name=".feedback" android:parentActivityName=".MainActivity" />
         <activity android:name=".FoundPassenger" />
         <activity android:name=".PromptForPickup" />
         <activity android:name=".PromptForDropoff" />
-        <activity android:name=".Statistics" />
+        <activity android:name=".Statistics"
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".SearchingForPassengers"
+            android:name=".SearchingForPassengers" android:parentActivityName=".MainActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".DetailsEdit"></activity>
+        <activity android:name=".DetailsEdit"
+            android:parentActivityName=".MainActivity">
+
+
+
+        </activity>
     </application>
 
 </manifest>

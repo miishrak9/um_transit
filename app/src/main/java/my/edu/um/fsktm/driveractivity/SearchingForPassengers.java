@@ -2,6 +2,7 @@ package my.edu.um.fsktm.driveractivity;
 
 import android.graphics.drawable.Animatable;
 import android.graphics.drawable.AnimationDrawable;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -16,22 +17,14 @@ public class SearchingForPassengers extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_searching_for_passengers);
+        android.support.v7.widget.Toolbar myToolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.appbar);
+        setSupportActionBar(myToolbar);
 
 
-        ImageView loading = (ImageView)findViewById(R.id.imageView);
-        animation = (AnimationDrawable)loading.getDrawable();
-
-    }
+        ActionBar ab = getSupportActionBar();
+        ab.setDisplayHomeAsUpEnabled(true);
 
 
-    public void start(View v){
-
-        animation.start();
-    }
-
-    public void stop(View v){
-
-        animation.stop();
     }
 }
 

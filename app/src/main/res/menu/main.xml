@@ -4,14 +4,26 @@
 
 
 
-
     <item
-
         android:id="@+id/action_settings"
         android:orderInCategory="100"
-        android:title="Edit Car"
+        android:title="@string/edit_car"
         app:showAsAction="never"
         android:visible="true" />
+    <item
+        android:id="@+id/stats"
+        android:orderInCategory="100"
+        android:title="@string/statistics"
+        app:showAsAction="never"
+        android:visible="true" />
+
+    <item
+        android:id="@+id/feedback"
+        android:orderInCategory="100"
+        android:title="@string/feedback"
+        app:showAsAction="never"
+        android:visible="true" />
+
 
 
 </menu>

@@ -10,4 +10,11 @@
     <string name="toolbar_header">Edit Car</string>
     <string name="fetch_button">Start Fetching !</string>
 
+
+    <string name="edit_car">Edit Car</string>
+    <string name="statistics">Statistics</string>
+    <string name="feedback">Feedback</string>
+
+
+
 </resources>
