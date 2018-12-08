@@ -21,11 +21,10 @@
         <activity android:name=".PromptForPickup" />
         <activity android:name=".PromptForDropoff" />
         <activity android:name=".Statistics" />
-        <activity android:name=".SearchingForPassengers"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-
-
-            ></activity>
+        <activity
+            android:name=".SearchingForPassengers"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".DetailsEdit"></activity>
     </application>
 
 </manifest>
