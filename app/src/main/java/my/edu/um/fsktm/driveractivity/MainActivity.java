@@ -21,6 +21,10 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     private Button button;
+    private  Button button14;
+    private Button button15;
+    private  Button button16;
+
     AnimationDrawable animation;
 
 
@@ -40,6 +44,34 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v){
                 openSearchingFOrPassengers();
             }
+
+        });
+        button14 = (Button)findViewById(R.id.button14);
+        button14.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v){
+                openFoundPassenger();
+            }
+
+        });
+        button15 = (Button)findViewById(R.id.button15);
+        button15.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v){
+                openPromptForPickup();
+            }
+
+        });
+        button16 = (Button)findViewById(R.id.button16);
+        button16.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v){
+                openPromptForDropoff();
+            }
+
         });
     }
 
@@ -47,6 +79,23 @@ public class MainActivity extends AppCompatActivity {
     public  void openSearchingFOrPassengers(){
 
         Intent intent = new Intent(this, SearchingForPassengers.class);
+        startActivity(intent);
+    }
+
+    public  void openFoundPassenger(){
+
+        Intent intent = new Intent(this, FoundPassenger.class);
+        startActivity(intent);
+    }
+
+    public  void openPromptForPickup(){
+
+        Intent intent = new Intent(this, PromptForPickup.class);
+        startActivity(intent);
+    }
+    public  void openPromptForDropoff(){
+
+        Intent intent = new Intent(this, PromptForDropoff.class);
         startActivity(intent);
     }
 
