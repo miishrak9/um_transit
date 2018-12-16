@@ -5,6 +5,8 @@
     <color name="colorAccent">#D81B60</color>
     <color name="action">#000000</color>
     <color name="feedbackbar">#26b6a3</color>
+    <color name="reject">#d14a4a</color>
+    <color name="accept">#53bf75</color>
     <color name="fdbacktxtcol">#000000</color>
 
 
